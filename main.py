@@ -118,13 +118,13 @@ def register_account(username: str, password: str) -> str:
 
 def run_tests() -> None:
     """Запускает тестовые сценарии регистрации и выводит результаты."""
-    print("Проверка простого декоратора:")
+    print("=== Проверка простого декоратора ===")
     print(register_user("short"))
     print(register_user("password"))
     print(register_user("Password"))
     print(register_user("Password1"))
 
-    print("\nПроверка регистрации аккаунтов:")
+    print("\n=== Проверка регистрации аккаунтов ===")
 
     test_data: list[tuple[str, str]] = [
         ("ivan", "Password12!"),
